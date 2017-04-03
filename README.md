@@ -16,12 +16,16 @@ Objective -
 5.	Bonus: On the “Your search results” page set the minimum and maximum price (both able to be specified by the test runner)
 
 
+
+
 How to run -
 
 
 Download the repository into a folder and open the project in an IDE. Go to TestVerysProject, located under the test folder which is inside
 the src folder and run it. You should probably change the path of chromedriver in line 74 of TestVerysProject.java to reflect where it 
 is in your machine.
+
+
 
 
 
@@ -38,6 +42,8 @@ I wasn't really experienced with a test runner for testing multiple values, So I
 those values for the test. Since it is a JUnit test, there are some assertions to check if certain conditions are being met.
 I feel like I did structure the files and folders incorrectly. The pages folder with the pages classes should have been under the main src
 folder and not the test folder. Other than that it should be structured properly.
+
+
 
 
 
