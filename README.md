@@ -16,10 +16,7 @@ Objective -
 5.	Bonus: On the “Your search results” page set the minimum and maximum price (both able to be specified by the test runner)
 
 
-
-
 How to run -
-
 
 Download the repository into a folder and open the project in an IDE. Go to TestVerysProject, located under the test folder which is inside
 the src folder and run it. You should probably change the path of chromedriver in line 74 of TestVerysProject.java to reflect where it 
@@ -27,10 +24,7 @@ is in your machine.
 
 
 
-
-
 Structure -
-
 
 I tried to follow best practices in automation by using POM(Page Object Model). In this model, we isolate the pages into their specific
 classes and these classes store the WebElements and the actions that can be done on those elements. Since this test would take two pages, I
@@ -45,10 +39,7 @@ folder and not the test folder. Other than that it should be structured properly
 
 
 
-
-
 Problems I faced -
-
 
 The immediate problem I faced was FireFoxDriver and ChromeDriver not working properly. The Firefox one was starting a new browser, but 
 wasn't getting the url. Tried downgrading my Firefox version, but it still did not work, so I tried using ChromeDriver. ChromeDriver wasn't
@@ -67,7 +58,8 @@ I would have liked on it and decided to focus on the main objectives. I still ha
 managed to automate moving the slider, but spent too much time trying to figure out how to check the minimum and maximum values after 
 the slider has moved. The way I wanted to work on it was get the min and max value, get the min slider element and move it across, while 
 constantly checking the updated min value with the user given min value. When both those values are equal, stop the slide animation and 
-repeat the process for max value. If it weren't for the time constraints, I feel I could have accomplished the bonus objective.
+repeat the process for max value. 
+If it weren't for the time constraints, I feel I could have accomplished the bonus objective.
 This was mentioned before in the structure, but I had no experience with a test runner, so I just decided to use JUnit to parameterize 
 some dummy values to be passed in to the webelements. I designed the test in such a way that it would automate 5 different sets of data 
 that were passed in. This is still inline with the concept of the testrunner as it is following a Behavior Driven Development approach 
