@@ -3,7 +3,6 @@ package Pages;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.PageFactory;
 import java.util.List;
-import java.util.concurrent.TimeUnit;
 //import org.openqa.selenium.interactions.Action;
 //import org.openqa.selenium.interactions.Actions;
 //import org.openqa.selenium.support.FindBy;
@@ -29,7 +28,6 @@ public class ResultsPage {
         for(WebElement e : companyList){
             if(e.findElement(By.name("filters")).getAttribute("value").equals(text.toLowerCase())){
                 e.click();
-             //   System.out.println("Company clicked inside the results page is " + e.findElement(By.name("filters")).isSelected());
             }
         }
     }
@@ -39,7 +37,6 @@ public class ResultsPage {
         for(WebElement e : categoryList){
             if(e.findElement(By.name("filters")).getAttribute("value").equals(text.toLowerCase())){
                 e.click();
-           //     System.out.println("Category clicked inside the results page is " + e.findElement(By.name("filters")).isSelected());
             }
         }
     }
