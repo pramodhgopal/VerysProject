@@ -26,6 +26,7 @@ classes and these classes store the WebElements and the actions that can be done
 made two classes, the search page(the landing page) and the results page, and stored their respective elements in them. I wanted to use both
 driver.findElement() and the @FindBy functionality to demostrate how they can be used to get the elements. Thats why SearchPage's elements
 are predominantly found using @FindBy and ResultsPage by driver.FindElement().
+
 I wasn't really experienced with a test runner for testing multiple values, So I used JUnit to parameterize some values and decided to run
 those values for the test. Since it is a JUnit test, there are some assertions to check if certain conditions are being met.
 I feel like I did structure the files and folders incorrectly. The pages folder with the pages classes should have been under the main src
@@ -38,10 +39,12 @@ getting set in my path in environment variables, so I had to set the System Prop
 practice as no other machine would have the driver in the folder I specified. You could change the path of chromedriver in line 74 of
 TestVerysProject.java. This might not be ideal since we should test in every possible browser driver, but due to time constraints, I had 
 to resort to using ChromeDriver.
+
 I did face some issues using ChromeDriver. I wasn't able to click on certain elements in the page for some reason, so I had to use 
 JavaScriptExecutor class to trigger a click. This is shown in the way I went about clicking the search button in the Search Page. I also 
 had to use it to scroll down on the Results page as ChromeDriver wasn't picking up the car rental company and car category checkbox 
 elements.
+
 I also couldn't finish the bonus objective. I felt like I was close to making a breakthrough, but realized I was spending more time than 
 I would have liked on it and decided to focus on the main objectives. I still have that portion of the code commented on ResultsPage. I 
 managed to automate moving the slider, but spent too much time trying to figure out how to check the minimum and maximum values after 
