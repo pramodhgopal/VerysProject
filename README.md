@@ -2,6 +2,7 @@
 Automation Project for Verys
 
 This is the automation project for verys. The objective is copy pasted below -
+
 Objective - 
 1.	Go to https://www.aa.com/car
 2.	Fill out the book car form. Structure your code such that a test runner should be able to specify the following values:
@@ -16,11 +17,17 @@ Objective -
 
 
 How to run -
+
+
 Download the repository into a folder and open the project in an IDE. Go to TestVerysProject, located under the test folder which is inside
 the src folder and run it. You should probably change the path of chromedriver in line 74 of TestVerysProject.java to reflect where it 
 is in your machine.
 
+
+
 Structure -
+
+
 I tried to follow best practices in automation by using POM(Page Object Model). In this model, we isolate the pages into their specific
 classes and these classes store the WebElements and the actions that can be done on those elements. Since this test would take two pages, I
 made two classes, the search page(the landing page) and the results page, and stored their respective elements in them. I wanted to use both
@@ -32,7 +39,11 @@ those values for the test. Since it is a JUnit test, there are some assertions t
 I feel like I did structure the files and folders incorrectly. The pages folder with the pages classes should have been under the main src
 folder and not the test folder. Other than that it should be structured properly.
 
+
+
 Problems I faced -
+
+
 The immediate problem I faced was FireFoxDriver and ChromeDriver not working properly. The Firefox one was starting a new browser, but 
 wasn't getting the url. Tried downgrading my Firefox version, but it still did not work, so I tried using ChromeDriver. ChromeDriver wasn't
 getting set in my path in environment variables, so I had to set the System Property before I instantiated the driver. I feel this is bad 
