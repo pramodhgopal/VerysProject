@@ -60,6 +60,7 @@ the slider has moved. The way I wanted to work on it was get the min and max val
 constantly checking the updated min value with the user given min value. When both those values are equal, stop the slide animation and 
 repeat the process for max value. 
 If it weren't for the time constraints, I feel I could have accomplished the bonus objective.
+
 This was mentioned before in the structure, but I had no experience with a test runner, so I just decided to use JUnit to parameterize 
 some dummy values to be passed in to the webelements. I designed the test in such a way that it would automate 5 different sets of data 
 that were passed in. This is still inline with the concept of the testrunner as it is following a Behavior Driven Development approach 
